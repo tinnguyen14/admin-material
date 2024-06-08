@@ -106,13 +106,13 @@ const Sidebar = ({ open, onClose }) => {
                       to={subItem.path}
                       sx={{ pl: 4, mt: 1 }}
                       style={{
-                        backgroundColor: isActiveRoute(subItem.path) ? 'white' : '',
-                        color: isActiveRoute(subItem.path) ? '#B7070A' : 'white',
+                        backgroundColor: isActiveRoute(subItem.path) ? error.contrastText : '',
+                        color: isActiveRoute(subItem.path) ? error.main : error.contrastText,
                       }}
                     >
                       <ListItemIcon
                         style={{
-                          color: isActiveRoute(subItem.path) ? '#B7070A' : 'white',
+                          color: isActiveRoute(subItem.path) ? error.main : error.contrastText,
                         }}
                       >
                         <BarChart />
